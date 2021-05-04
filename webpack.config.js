@@ -9,6 +9,9 @@ module.exports = {
         path: path.resolve(__dirname, './build'),
         filename: 'app.bundle.js',
     },
+    resolve: {
+      extensions: ['.js', '.jsx']
+    },
     module: {
         loaders: [
             {
@@ -16,7 +19,7 @@ module.exports = {
                 loader: 'file-loader?name=[name].[ext]',
             },
             {
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
             query: {
