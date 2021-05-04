@@ -2,6 +2,7 @@
   "name": "dashboard_choose_framework",
   "version": "1.0.0",
   "description": "A JavaScript project",
+  "type": "module",
   "main": "./dist/index.js",
   "scripts": {
     "dev:watch-backend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node --out-dir ./dist/",
